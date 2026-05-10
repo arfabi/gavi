@@ -1,0 +1,126 @@
+/* =========================================================
+   GAVI Dashboard - Custom Styles
+   ========================================================= */
+
+:root {
+    --gavi-primary:    #1e6f9f;
+    --gavi-dark:       #0f2235;
+    --gavi-light-blue: #EBF4FA;
+}
+
+/* Sidebar brand */
+.brand-link {
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+/* Sidebar active item */
+.nav-sidebar .nav-link.active,
+.nav-sidebar .nav-link:hover {
+    background-color: rgba(30, 111, 159, 0.3) !important;
+    color: #fff !important;
+}
+
+/* Card accent */
+.card-accent-primary {
+    border-top: 3px solid var(--gavi-primary);
+}
+
+/* Info cards */
+.info-box-icon {
+    background-color: var(--gavi-primary) !important;
+}
+
+/* Badge overrides */
+.badge-synced {
+    background-color: #198754;
+    color: #fff;
+}
+
+.badge-unsynced {
+    background-color: #FFC107;
+    color: #000;
+}
+
+/* Table improvements */
+.table th {
+    background-color: var(--gavi-dark);
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--gavi-light-blue);
+}
+
+/* Chat bubbles (Tickets) */
+.chat-bubble {
+    max-width: 70%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.chat-bubble.customer {
+    background-color: #f1f1f1;
+    margin-right: auto;
+    border-bottom-left-radius: 2px;
+}
+
+.chat-bubble.ai {
+    background-color: var(--gavi-light-blue);
+    margin-left: auto;
+    border-bottom-right-radius: 2px;
+    border: 1px solid #bee3f8;
+}
+
+.chat-bubble.staff {
+    background-color: #d4edda;
+    margin-left: auto;
+    border-bottom-right-radius: 2px;
+    border: 1px solid #c3e6cb;
+}
+
+.chat-time {
+    font-size: 0.72rem;
+    color: #888;
+    margin-top: 3px;
+}
+
+/* Priority badges */
+.priority-high   { background-color: #DC3545; color: #fff; }
+.priority-medium { background-color: #FFC107; color: #000; }
+.priority-low    { background-color: #198754; color: #fff; }
+
+/* AI mode badge in navbar */
+.ai-mode-on  { background-color: #198754 !important; }
+.ai-mode-off { background-color: #6c757d !important; }
+
+/* Password toggle button */
+.input-group .btn-outline-secondary {
+    border-color: #ced4da;
+}
+
+/* Stat cards */
+.small-box .icon {
+    color: rgba(255,255,255,0.3);
+}
+
+/* Form improvements */
+.form-control:focus {
+    border-color: var(--gavi-primary);
+    box-shadow: 0 0 0 0.2rem rgba(30, 111, 159, 0.15);
+}
+
+/* Page transitions */
+.content-wrapper {
+    background-color: #f4f6f9;
+}
+
+/* Responsive table wrapper */
+.table-responsive-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
